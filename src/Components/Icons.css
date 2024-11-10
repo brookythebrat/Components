@@ -1,0 +1,14 @@
+/* Icons.css */
+
+/* Base icon style */
+.icon {
+  font-size: 24px;   /* Adjust size as needed */
+  color: #333;       /* Default icon color */
+  margin-right: 8px; /* Space between icons */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.icon:hover {
+  color: #3498db;
+}
