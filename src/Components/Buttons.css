@@ -1,0 +1,150 @@
+/* Button.css */
+
+/* Base Button Styles */
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: none;
+  background-color: #3498db;
+  color: white;
+}
+
+/* Normal Button */
+.btn.normal {
+  background-color: #3498db; /* Default button color */
+}
+
+.btn.normal:hover {
+  background-color: #2980b9; /* Hover color */
+}
+
+/* Outline Button */
+.btn.outline {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+
+.btn.outline:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+/* Disabled Button */
+.btn.disabled {
+  background-color: #e0e0e0;
+  color: #b0b0b0;
+  cursor: not-allowed;
+}
+
+/* Gradient Button */
+.btn.gradient {
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  color: white;
+}
+
+.btn.gradient:hover {
+  background: linear-gradient(45deg, #feb47b, #ff7e5f);
+}
+
+/* Small Button */
+.btn.small {
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+/* Large Button */
+.btn.large {
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+/* Loading Button */
+.btn.loading {
+  background-color: #3498db;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn.loading .loader {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 2s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Rounded Button */
+.btn.rounded {
+  border-radius: 30px;
+}
+
+/* Block Button */
+.btn.block {
+  width: 100%;
+  display: block;
+}
+
+/* Icon Left Button */
+.btn.icon-left .icon {
+  margin: 0 10px;
+}
+
+.btn.icon-left {
+  flex-direction: row-reverse;
+}
+
+/* Icon Right Button */
+.btn.icon-right .icon {
+  margin: 0 10px;
+}
+
+.btn.icon-right {
+  flex-direction: row;
+}
+
+/* Icon Only Button */
+.btn.icon-only {
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btn.icon-only:hover {
+  background-color: #2980b9;
+}
+
+/* Icon + Text Button */
+.btn.icon-text .icon {
+  margin: 0 10px;
+}
+
+/* Container Styles for Layout */
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 50px;
+}

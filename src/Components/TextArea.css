@@ -1,0 +1,74 @@
+/* TextArea.css */
+
+/* General Container for Text Areas in a Row */
+.text-area-row {
+  display: flex;
+  flex-wrap: wrap; /* Allows the text areas to wrap when needed */
+  gap: 20px; /* Space between each text area */
+  justify-content: space-between; /* Distribute the text areas evenly */
+  margin-top: 20px;
+  padding: 10px; /* Padding to give space around the whole row */
+}
+
+/* Individual Text Area Container */
+.text-area-container {
+  flex: 1; /* Makes each text area take equal space */
+  min-width: 200px; /* Ensures they don't get too small */
+  max-width: 30%; /* Adjust this based on the available space */
+}
+
+/* Base Styles for Text Areas */
+.text-area {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  resize: none; /* Default behavior for non-resizable */
+  min-height: 100px;
+}
+
+.text-area:focus {
+  border-color: #3498db;
+  outline: none;
+  background-color: #f0f8ff;
+}
+
+/* Focused Text Area */
+.text-area.focused {
+  border-color: #2980b9;
+  background-color: #f0f8ff;
+}
+
+/* Error Text Area */
+.text-area.error {
+  border-color: #e74c3c;
+  background-color: #f8d7da;
+}
+
+.text-area.error:focus {
+  border-color: #c0392b;
+  background-color: #f8d7da;
+}
+
+/* Resizable Text Area */
+.text-area.resizable {
+  resize: vertical; /* Allows vertical resizing */
+  min-height: 120px;
+}
+
+/* Character Count Display */
+.char-count {
+  font-size: 14px;
+  color: #888;
+  text-align: right;
+  margin-top: 5px;
+}
+
+/* Error Message */
+.error-message {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+}

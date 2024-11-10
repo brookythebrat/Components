@@ -1,0 +1,93 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #4B0082;
+  color: white;
+  transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+.navbar .logo img {
+  width: 50px; /* Adjust based on your logo size */
+  height: auto;
+}
+
+.navbar .auth-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .login-text {
+  margin-right: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar .signup-btn {
+  padding: 8px 20px;
+  background-color: #E6E6FA;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar .signup-btn:hover {
+  background-color: #D8B6E1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .auth-links {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .navbar .login-text {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  .navbar .signup-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .navbar .logo img {
+    width: 40px; /* Adjust logo size for smaller screens */
+  }
+
+  .navbar .auth-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar .login-text {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .navbar .signup-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+}

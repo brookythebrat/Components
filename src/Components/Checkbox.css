@@ -1,0 +1,81 @@
+/* Checkbox.css */
+
+/* Container for all checkboxes (displayed in a row) */
+.checkbox-container {
+  display: flex;
+  gap: 20px; /* Space between each checkbox */
+  margin-top: 20px;
+  flex-wrap: wrap; /* Allow checkboxes to wrap if they exceed container width */
+}
+
+/* Basic checkbox styling */
+.checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Normal Checkbox */
+.checkbox.normal {
+  accent-color: #3498db; /* Color for the normal checkbox */
+}
+
+/* Checked Checkbox */
+.checkbox.checked:checked {
+  accent-color: #2ecc71; /* Green color when checked */
+}
+
+/* Disabled Checkbox */
+.checkbox.disabled:disabled {
+  accent-color: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Error Checkbox */
+.checkbox.error:checked {
+  accent-color: #e74c3c; /* Red color when checked */
+}
+
+.checkbox.error:checked + label {
+  color: #e74c3c;
+}
+
+/* Checkbox with Icon (using a span for the icon) */
+.checkbox.icon:checked + label .checkbox-icon {
+  color: #3498db;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+/* Outlined Checkbox */
+.checkbox.outlined {
+  border: 2px solid #3498db;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.checkbox.outlined:checked {
+  background-color: #3498db;
+  border-color: #2980b9;
+}
+
+/* Label styling */
+.checkbox-item label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Checkbox Icon (used in the checkbox with icon) */
+.checkbox-icon {
+  font-size: 18px;
+  color: #3498db;
+  transition: color 0.3s ease;
+}
+
+/* Hover state for labels */
+.checkbox-item label:hover {
+  color: #2980b9;
+  cursor: pointer;
+}
