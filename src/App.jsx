@@ -7,18 +7,6 @@ import Checkbox from './Components/Checkbox'
 import Dropdown from './Components/Dropdown'
 import TextArea from './Components/TextArea'
 import RadioButton from './Components/RadioButton'
-import {
-  HomeIcon,
-  SearchIcon,
-  UserIcon,
-  SettingsIcon,
-} from "./Components/Icons";
-
-import "./Components/Icons.css";
-
-
-
-
 
 
 
@@ -36,13 +24,6 @@ function App() {
         <RadioButton />
         <Dropdown />
         <TextArea />
-       
-        <div>
-          <HomeIcon />
-          <SearchIcon />
-          <UserIcon />
-          <SettingsIcon />
-        </div>
       </div>{" "}
       <div>
         <h1> Layout Components </h1>
