@@ -16,6 +16,8 @@ import Grid from './LayoutComponents/Grid'
 import Breadcrumbs from './LayoutComponents/Breadcrumbs'
 import Notification from './FeedbackComponents/Notification'
 import Loader from './FeedbackComponents/Loader'
+import Alert from './FeedbackComponents/Alert'
+import ToolTip from './FeedbackComponents/ToolTip';
 
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
         <h1>Feedback Components</h1>
         <Notification />
         <Loader/>
+        <Alert/>
+        <ToolTip/>
       </div>
     </>
   );
