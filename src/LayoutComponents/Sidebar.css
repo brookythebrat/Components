@@ -1,0 +1,47 @@
+/* Sidebar Container */
+.sidebar-container {
+  width: 300px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Accordion Common Styles */
+.accordion {
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+  padding: 12px 16px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #eaeaea;
+}
+
+.accordion-body {
+  padding: 12px 16px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+/* Colored Accordions */
+.accordion.colored .accordion-header {
+  color: #fff;
+}
+
+/* Card-Style Accordion */
+.accordion.card-style {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

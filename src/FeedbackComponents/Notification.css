@@ -1,0 +1,115 @@
+/* Notification container for all pop-ups */
+.notifications-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 1000;
+}
+
+/* Individual notification styling */
+.notification {
+  padding: 16px 24px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: slideIn 0.4s ease;
+  cursor: pointer;
+}
+
+.notification:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Types of notifications */
+.notification.success {
+  background-color: #28a745; /* Green */
+}
+
+.notification.error {
+  background-color: #dc3545; /* Red */
+}
+
+.notification.info {
+  background-color: #17a2b8; /* Blue */
+}
+
+.notification.warning {
+  background-color: #ffc107; /* Yellow */
+  color: #212529;
+}
+
+/* Close button */
+.close-btn {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.close-btn:hover {
+  opacity: 1;
+}
+
+/* Buttons for triggering notifications */
+.notification-buttons {
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.notification-buttons button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.notification-buttons button:nth-child(1) {
+  background-color: #28a745; /* Success */
+}
+
+.notification-buttons button:nth-child(2) {
+  background-color: #dc3545; /* Error */
+}
+
+.notification-buttons button:nth-child(3) {
+  background-color: #17a2b8; /* Info */
+}
+
+.notification-buttons button:nth-child(4) {
+  background-color: #ffc107; /* Warning */
+  color: #212529;
+}
+
+/* Button hover effects */
+.notification-buttons button:hover {
+  opacity: 0.9;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

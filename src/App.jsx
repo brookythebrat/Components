@@ -11,7 +11,11 @@ import Cards from './LayoutComponents/Cards'
 import Modals from './LayoutComponents/Modals'
 import Accordion from './LayoutComponents/Accordion'
 import Tabs from './LayoutComponents/Tabs'
-
+import Sidebar from './LayoutComponents/Sidebar'
+import Grid from './LayoutComponents/Grid'
+import Breadcrumbs from './LayoutComponents/Breadcrumbs'
+import Notification from './FeedbackComponents/Notification'
+import Loader from './FeedbackComponents/Loader'
 
 
 function App() {
@@ -31,10 +35,18 @@ function App() {
       </div>{" "}
       <div>
         <h1> Layout Components </h1>
-        <Cards/>
-        <Modals/>
-        <Accordion/>
-        <Tabs/>
+        <Cards />
+        <Modals />
+        <Accordion />
+        <Tabs />
+        <Sidebar />
+        <Grid />
+        <Breadcrumbs />
+      </div>
+      <div>
+        <h1>Feedback Components</h1>
+        <Notification />
+        <Loader/>
       </div>
     </>
   );
