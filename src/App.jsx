@@ -7,6 +7,10 @@ import Checkbox from './Components/Checkbox'
 import Dropdown from './Components/Dropdown'
 import TextArea from './Components/TextArea'
 import RadioButton from './Components/RadioButton'
+import Cards from './LayoutComponents/Cards'
+import Modals from './LayoutComponents/Modals'
+import Accordion from './LayoutComponents/Accordion'
+import Tabs from './LayoutComponents/Tabs'
 
 
 
@@ -27,6 +31,10 @@ function App() {
       </div>{" "}
       <div>
         <h1> Layout Components </h1>
+        <Cards/>
+        <Modals/>
+        <Accordion/>
+        <Tabs/>
       </div>
     </>
   );

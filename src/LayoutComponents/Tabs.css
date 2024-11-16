@@ -1,0 +1,51 @@
+/* Tabs.css */
+.tabs-container {
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.tabs-header {
+  display: flex;
+  flex-direction: column; /* Arrange tabs vertically */
+  width: 200px;
+  border-right: 2px solid #ccc;
+}
+
+.tab {
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  border: none;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.tab:hover {
+  background-color: #ddd;
+}
+
+.tab.active {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.tabs-content {
+  padding: 20px;
+  flex-grow: 1; /* Take up remaining space next to tabs */
+}
+
+.tab-content {
+  display: block;
+}
+
+.tab-content h3 {
+  margin-top: 0;
+}
