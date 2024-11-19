@@ -1,0 +1,54 @@
+/* General container for the switch */
+.switch-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  margin: 10px 0;
+}
+
+/* Label for the switch */
+.switch-label {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Toggle container */
+.toggle-container {
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Toggle circle */
+.toggle-circle {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* ON state styles */
+.toggle-container.on {
+  background-color: #007bff;
+}
+
+.toggle-container.on .toggle-circle {
+  transform: translateX(25px);
+}
+
+/* OFF state styles */
+.toggle-container.off {
+  background-color: #ccc;
+}
+
+.toggle-container.off .toggle-circle {
+  transform: translateX(0);
+}

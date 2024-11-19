@@ -18,7 +18,11 @@ import Notification from './FeedbackComponents/Notification'
 import Loader from './FeedbackComponents/Loader'
 import Alert from './FeedbackComponents/Alert'
 import ToolTip from './FeedbackComponents/ToolTip';
-
+import DatePicker from './FormComponents/DatePicker'
+import FileUpload from './FormComponents/FileUpload'
+import Forms from './FormComponents/Forms'
+import SwitchToggle from './FormComponents/SwitchToggle'
+import TimePicker from './FormComponents/TimePicker'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -51,6 +55,14 @@ function App() {
         <Loader/>
         <Alert/>
         <ToolTip/>
+      </div>
+      <div>
+        <h1>Form Components</h1>
+        <DatePicker></DatePicker>
+        <FileUpload></FileUpload>
+        <Forms></Forms>
+        <SwitchToggle></SwitchToggle>
+        <TimePicker></TimePicker>
       </div>
     </>
   );

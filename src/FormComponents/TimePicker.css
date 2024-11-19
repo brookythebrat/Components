@@ -1,0 +1,44 @@
+/* General styles for the time picker */
+.custom-time-picker {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  font-family: "Arial", sans-serif;
+}
+
+.time-picker-label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.time-picker-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.time-picker-input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.time-picker-input:hover,
+.time-picker-input:focus {
+  border-color: #007bff;
+  background: #f9f9f9;
+  outline: none;
+}
+
+.time-picker-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
