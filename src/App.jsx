@@ -23,9 +23,20 @@ import FileUpload from './FormComponents/FileUpload'
 import Forms from './FormComponents/Forms'
 import SwitchToggle from './FormComponents/SwitchToggle'
 import TimePicker from './FormComponents/TimePicker'
+import Avatar from './MiscComponents/Avatar'
+import ProgressBar from './MiscComponents/ProgressBar'
+import CountdownTimer from './MiscComponents/CountdownTimer'
+import StarRating from './MiscComponents/StarRating'
+import CarouselSlider from './MiscComponents/CarouselSlider'
+import Pagination from './MiscComponents/Pagination'
 
 function App() {
   const [count, setCount] = useState(0)
+  const totalPages = 10;
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
 
   return (
     <>
@@ -52,17 +63,27 @@ function App() {
       <div>
         <h1>Feedback Components</h1>
         <Notification />
-        <Loader/>
-        <Alert/>
-        <ToolTip/>
+        <Loader />
+        <Alert />
+        <ToolTip />
       </div>
       <div>
         <h1>Form Components</h1>
-        <DatePicker></DatePicker>
-        <FileUpload></FileUpload>
-        <Forms></Forms>
-        <SwitchToggle></SwitchToggle>
-        <TimePicker></TimePicker>
+        <DatePicker/>
+        <FileUpload/>
+        <Forms/>
+        <SwitchToggle/>
+        <TimePicker/>
+        <Pagination/>
+      </div>
+      <div>
+        <h1>Misc Components:</h1>
+        <Avatar/>
+        <ProgressBar/>
+        <CountdownTimer/>
+        <StarRating/>
+        <CarouselSlider/>
+        <Pagination/>
       </div>
     </>
   );

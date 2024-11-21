@@ -1,0 +1,62 @@
+/* Main container for the countdown timer */
+.countdown-timer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.countdown-timer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Display container for time */
+.countdown-timer-display {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Individual time parts */
+.time-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  font-size: 30px;
+  color: #fff;
+  background-color: #333;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+.label {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Color variations */
+.countdown-timer-primary {
+  background-color: #007bff;
+}
+
+.countdown-timer-success {
+  background-color: #28a745;
+}
+
+.countdown-timer-warning {
+  background-color: #ffc107;
+}
+
+.countdown-timer-danger {
+  background-color: #dc3545;
+}

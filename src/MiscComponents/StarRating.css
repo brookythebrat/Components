@@ -1,0 +1,67 @@
+/* Basic styling for the star rating container */
+.star-rating {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+  margin: 20px 0;
+}
+
+/* Container for stars */
+.stars {
+  display: inline-flex;
+  font-size: 30px;
+  cursor: pointer;
+  gap: 5px;
+  position: relative;
+}
+
+.stars .star {
+  color: #e0e0e0; /* Light gray for empty stars */
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Add filled star color */
+.stars.gold .star.filled {
+  color: #f5b300; /* Gold for filled stars */
+}
+
+.stars.blue .star.filled {
+  color: #007bff; /* Blue for filled stars */
+}
+
+/* Hover effect */
+.stars .star:hover {
+  transform: scale(1.2);
+  color: #ffda44; /* Golden glow for hover */
+}
+
+/* Animation for wave effect */
+.stars .star.filled {
+  animation: wave 0.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Rating text styling */
+.rating-text {
+  font-size: 14px;
+  color: #333;
+  margin-top: 10px;
+  font-weight: 600;
+}
