@@ -5,61 +5,59 @@ const Button = () => {
   return (
     <div className="button-container">
       {/* Normal Button */}
-      <button className="btn normal">Normal Button</button>
+      <a href="#" className="btn normal">Normal Button</a>
 
       {/* Hover Button */}
-      <button className="btn hover">Hover Button</button>
+      <a href="#" className="btn hover">Hover Button</a>
 
       {/* Icon Left Button */}
-      <button className="btn icon-left">
+      <a href="#" className="btn icon-left">
         <span className="icon">🔍</span> Icon Left Button
-      </button>
+      </a>
 
       {/* Icon Right Button */}
-      <button className="btn icon-right">
+      <a href="#" className="btn icon-right">
         Icon Right Button <span className="icon">🔍</span>
-      </button>
+      </a>
 
       {/* Pressed Button */}
-      <button className="btn pressed">Pressed Button</button>
+      <a href="#" className="btn pressed">Pressed Button</a>
 
       {/* Outline Button */}
-      <button className="btn outline">Outline Button</button>
+      <a href="#" className="btn outline">Outline Button</a>
 
       {/* Disabled Button */}
-      <button className="btn disabled" disabled>
-        Disabled Button
-      </button>
+      <a href="#" className="btn disabled" disabled>Disabled Button</a>
 
       {/* Gradient Button */}
-      <button className="btn gradient">Gradient Button</button>
+      <a href="#" className="btn gradient">Gradient Button</a>
 
       {/* Small Button */}
-      <button className="btn small">Small Button</button>
+      <a href="#" className="btn small">Small Button</a>
 
       {/* Large Button */}
-      <button className="btn large">Large Button</button>
+      <a href="#" className="btn large">Large Button</a>
 
       {/* Loading Button */}
-      <button className="btn loading">
+      <a href="#" className="btn loading">
         <span className="loader"></span> Loading...
-      </button>
+      </a>
 
       {/* Rounded Button */}
-      <button className="btn rounded">Rounded Button</button>
+      <a href="#" className="btn rounded">Rounded Button</a>
 
       {/* Block Button */}
-      <button className="btn block">Block Button</button>
+      <a href="#" className="btn block">Block Button</a>
 
       {/* With Icon Only Button */}
-      <button className="btn icon-only">
+      <a href="#" className="btn icon-only">
         <span className="icon">🔍</span>
-      </button>
+      </a>
 
       {/* Icon + Text Button */}
-      <button className="btn icon-text">
+      <a href="#" className="btn icon-text">
         <span className="icon">🔍</span> Icon + Text Button
-      </button>
+      </a>
     </div>
   );
 };
