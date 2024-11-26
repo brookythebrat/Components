@@ -92,9 +92,12 @@ const steps = ["Step One", "Step Two", "Step Three", "Step Four"];
         <Buttons />
         <h2>Different Types Of Inputs</h2>
         <Inputs />
+        <h2>Different Types Of Check Boxes</h2>
         <Checkbox />
         <RadioButton />
+        <h2>Different Types Of Drop Downs</h2>
         <Dropdown />
+        <h2>Different Types Of Text Areas</h2>
         <TextArea />
       </div>{" "}
       <div>
