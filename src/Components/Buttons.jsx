@@ -5,10 +5,14 @@ const Button = () => {
   return (
     <div className="button-container">
       {/* Normal Button */}
-      <a href="#" className="btn normal">Normal Button</a>
+      <a href="#" className="btn normal">
+        Normal Button
+      </a>
 
       {/* Hover Button */}
-      <a href="#" className="btn hover">Hover Button</a>
+      <a href="#" className="btn hover">
+        Hover Button
+      </a>
 
       {/* Icon Left Button */}
       <a href="#" className="btn icon-left">
@@ -21,22 +25,34 @@ const Button = () => {
       </a>
 
       {/* Pressed Button */}
-      <a href="#" className="btn pressed">Pressed Button</a>
+      <a href="#" className="btn pressed">
+        Pressed Button
+      </a>
 
       {/* Outline Button */}
-      <a href="#" className="btn outline">Outline Button</a>
+      <a href="#" className="btn outline">
+        Outline Button
+      </a>
 
       {/* Disabled Button */}
-      <a href="#" className="btn disabled" disabled>Disabled Button</a>
+      <a href="#" className="btn disabled" disabled>
+        Disabled Button
+      </a>
 
       {/* Gradient Button */}
-      <a href="#" className="btn gradient">Gradient Button</a>
+      <a href="#" className="btn gradient">
+        Gradient Button
+      </a>
 
       {/* Small Button */}
-      <a href="#" className="btn small">Small Button</a>
+      <a href="#" className="btn small">
+        Small Button
+      </a>
 
       {/* Large Button */}
-      <a href="#" className="btn large">Large Button</a>
+      <a href="#" className="btn large">
+        Large Button
+      </a>
 
       {/* Loading Button */}
       <a href="#" className="btn loading">
@@ -44,10 +60,14 @@ const Button = () => {
       </a>
 
       {/* Rounded Button */}
-      <a href="#" className="btn rounded">Rounded Button</a>
+      <a href="#" className="btn rounded">
+        Rounded Button
+      </a>
 
       {/* Block Button */}
-      <a href="#" className="btn block">Block Button</a>
+      <a href="#" className="btn block">
+        Block Button
+      </a>
 
       {/* With Icon Only Button */}
       <a href="#" className="btn icon-only">
