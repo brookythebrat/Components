@@ -1,0 +1,87 @@
+/* Container for both search bars - align to the left */
+.searchbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align to the top */
+  align-items: flex-start; /* Align to the left */
+  gap: 20px;
+  padding-left: 20px; /* Add some padding from the left */
+}
+
+/* First Search Bar (Simple Expansion) */
+.searchbar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  position: relative;
+}
+
+.searchbar-input {
+  width: 250px; /* Default width now visible */
+  height: 40px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid #4caf50;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #333;
+  outline: none;
+  transition: width 0.5s ease, padding 0.5s ease;
+  opacity: 1; /* Make sure it's visible initially */
+}
+
+.searchbar-input:focus {
+  width: 300px;
+  padding: 0.5rem 1.5rem;
+}
+
+.searchbar-input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+/* Second Search Bar with Icon Animation */
+.searchbar2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.searchbar2-icon {
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease, left 0.3s ease;
+}
+
+.searchbar2-icon.focused {
+  opacity: 1;
+  left: 15px;
+}
+
+.searchbar-input2 {
+  width: 250px; /* Default width now visible */
+  height: 40px;
+  padding: 0.5rem;
+  padding-left: 30px; /* Make room for the icon */
+  font-size: 1rem;
+  border: 2px solid #4caf50;
+  border-radius: 25px;
+  background-color: #ffffff;
+  color: #333;
+  outline: none;
+  transition: width 0.5s ease, padding 0.5s ease;
+  opacity: 1; /* Make sure it's visible initially */
+}
+
+.searchbar-input2:focus {
+  width: 300px;
+  padding: 0.5rem 1.5rem;
+}
+
+.searchbar-input2::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
