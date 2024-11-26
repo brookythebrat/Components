@@ -1,42 +1,139 @@
-/* Navbar.css */
+/* Base Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #4B0082;
+  background-color: #000107;
   color: white;
-  transition: all 0.3s ease; /* Smooth transition for changes */
+  transition: all 0.3s ease;
+  height: 60px; /* Explicit height */
 }
 
 .navbar .logo img {
-  width: 50px; /* Adjust based on your logo size */
+  width: 50px;
   height: auto;
 }
 
+/* Auth Links Styling */
 .navbar .auth-links {
   display: flex;
   align-items: center;
 }
 
+/* Login Button - Default Orange (For Regular Navbar) */
 .navbar .login-text {
   margin-right: 15px;
   font-size: 16px;
   cursor: pointer;
+  padding: 8px 20px;
+  border: 2px solid orange;
+  border-radius: 4px;
+  color: orange;
+  background: transparent;
+  transition: all 0.3s ease;
 }
 
+.navbar .login-text:hover {
+  box-shadow: 0 0 15px orange, 0 0 25px orange;
+  background-color: rgba(255, 165, 0, 0.2); /* Light translucent orange */
+}
+
+/* Sign Up Button - Default Orange Glow (For Regular Navbar) */
 .navbar .signup-btn {
   padding: 8px 20px;
-  background-color: #E6E6FA;
+  background-color: #E6E6FA; /* Lavender background */
   color: black;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 .navbar .signup-btn:hover {
-  background-color: #D8B6E1;
+  box-shadow: 0 0 15px orange, 0 0 25px orange;
+  background-color: orange;
+  color: white;
+}
+
+/* New Neon Green Navbar (Glow Navbar) */
+.glow-navbar {
+  margin-top: 20px;
+  position: relative;
+  height: 60px; /* Set height to match first navbar */
+}
+
+.glow-navbar .logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.glow-navbar .auth-links {
+  display: flex;
+  gap: 20px;
+  z-index: 1;
+  position: absolute; /* To align it on the right side */
+  right: 30px; /* Ensure the buttons are positioned to the right */
+  align-items: center; /* Center the items vertically */
+  height: 100%; /* Full height of the navbar */
+}
+
+/* Login Text - Neon Green */
+.glow-navbar .auth-links .login-text {
+  color: #39ff14; /* Neon Green */
+  text-transform: uppercase;
+  padding: 8px 20px;
+  border: 2px solid #39ff14; /* Neon Green border */
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.glow-navbar .auth-links .login-text:hover {
+  box-shadow: 0 0 15px #39ff14, 0 0 25px #39ff14; /* Neon Green glow */
+  background-color: rgba(57, 255, 20, 0.2); /* Light translucent green */
+}
+
+/* Sign Up Button - Neon Green */
+.glow-navbar .auth-links .signup-btn {
+  padding: 8px 20px;
+  background-color: #39ff14; /* Neon Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.glow-navbar .auth-links .signup-btn:hover {
+  background-color: #32e018; /* Lighter Neon Green */
+  box-shadow: 0 0 10px 2px rgba(57, 255, 20, 0.7); /* Neon Green glow */
+}
+
+/* Drawer Icon on the Left Side */
+.glow-navbar .drawer {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #39ff14; /* Neon Green */
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.glow-navbar .drawer:hover {
+  color: #32e018;
+  transform: translateY(-50%) scale(1.2);
+}
+
+.glow-navbar .drawer-text {
+  display: block;
+  text-align: center;
 }
 
 /* Responsive Styles */
@@ -45,6 +142,7 @@
     padding: 10px 20px;
     flex-direction: column;
     align-items: flex-start;
+    height: auto; /* Allow height to adjust on smaller screens */
   }
 
   .navbar .auth-links {
@@ -56,6 +154,7 @@
   .navbar .login-text {
     margin-right: 0;
     font-size: 14px;
+    padding: 8px 15px;
   }
 
   .navbar .signup-btn {
@@ -83,6 +182,7 @@
     margin-right: 0;
     margin-bottom: 10px;
     font-size: 12px;
+    padding: 10px;
   }
 
   .navbar .signup-btn {

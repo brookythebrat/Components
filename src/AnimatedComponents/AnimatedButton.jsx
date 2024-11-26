@@ -3,13 +3,13 @@ import "./AnimatedButton.css";
 
 const AnimatedButton = ({ children }) => {
   return (
-    <a href="#" className="btn">
+    <button className="animated-btn">
       {children}
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </a>
+      <span className="top"></span>
+      <span className="right"></span>
+      <span className="bottom"></span>
+      <span className="left"></span>
+    </button>
   );
 };
 
