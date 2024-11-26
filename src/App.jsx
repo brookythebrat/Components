@@ -86,8 +86,11 @@ const steps = ["Step One", "Step Two", "Step Three", "Step Four"];
     <>
       <div>
         <h1> Basic Components </h1>
+        <h2>Different Types Of Navbars</h2>
         <Navbar />
+        <h2>Different Types Of Buttons</h2>
         <Buttons />
+        <h2>Different Types Of Inputs</h2>
         <Inputs />
         <Checkbox />
         <RadioButton />

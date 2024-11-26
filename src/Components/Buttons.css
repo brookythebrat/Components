@@ -1,39 +1,112 @@
-/* Button.css */
-
 /* Base Button Styles */
 .btn {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 600;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
   transition: all 0.3s ease;
-  border: none;
-  background-color: #3498db;
-  color: white;
+}
+
+/* Glow Effect */
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(45deg, #03e9f4, #ff0080, #03e9f4);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Glow on Hover */
+.btn:hover::before {
+  opacity: 0.6;
 }
 
 /* Normal Button */
 .btn.normal {
-  background-color: #3498db; /* Default button color */
+  background-color: #03e9f4;
+  color: white;
 }
 
 .btn.normal:hover {
-  background-color: #2980b9; /* Hover color */
+  box-shadow: 0 0 15px #03e9f4;
+}
+
+/* Hover Button */
+.btn.hover {
+  background-color: white;
+  color: #03e9f4;
+  border: 2px solid #03e9f4;
+}
+
+.btn.hover:hover {
+  box-shadow: 0 0 15px #03e9f4;
+}
+
+/* Icon Left Button */
+.btn.icon-left {
+  background-color: #ff0080;
+  color: white;
+  padding-left: 30px;
+}
+
+.btn.icon-left .icon {
+  margin-right: 10px;
+}
+
+.btn.icon-left:hover {
+  box-shadow: 0 0 10px #ff0080;
+}
+
+/* Icon Right Button */
+.btn.icon-right {
+  background-color: #03e9f4;
+  color: white;
+  padding-right: 30px;
+}
+
+.btn.icon-right .icon {
+  margin-left: 10px;
+}
+
+.btn.icon-right:hover {
+  box-shadow: 0 0 10px #03e9f4;
+}
+
+/* Pressed Button */
+.btn.pressed {
+  background-color: #ff0080;
+  color: white;
+}
+
+.btn.pressed:active {
+  box-shadow: 0 0 20px #ff0080;
+  transform: scale(0.95);
 }
 
 /* Outline Button */
 .btn.outline {
-  background-color: transparent;
-  border: 2px solid #3498db;
-  color: #3498db;
+  background: transparent;
+  color: #03e9f4;
+  border: 2px solid #03e9f4;
 }
 
 .btn.outline:hover {
-  background-color: #3498db;
+  background-color: #03e9f4;
   color: white;
 }
 
@@ -51,13 +124,17 @@
 }
 
 .btn.gradient:hover {
-  background: linear-gradient(45deg, #feb47b, #ff7e5f);
+  box-shadow: 0 0 20px #ff7e5f, 0 0 40px #feb47b;
 }
 
 /* Small Button */
 .btn.small {
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 12px;
+}
+
+.btn.small:hover {
+  box-shadow: 0 0 10px #03e9f4;
 }
 
 /* Large Button */
@@ -66,81 +143,87 @@
   font-size: 20px;
 }
 
+.btn.large:hover {
+  box-shadow: 0 0 20px #03e9f4;
+}
+
 /* Loading Button */
 .btn.loading {
-  background-color: #3498db;
+  background-color: #03e9f4;
   color: white;
-  display: inline-flex;
-  align-items: center;
 }
 
 .btn.loading .loader {
-  border: 3px solid #f3f3f3;
-  border-top: 3px solid #3498db;
+  border: 3px solid transparent;
+  border-top: 3px solid white;
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  animation: spin 2s linear infinite;
-  margin-right: 10px;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Rounded Button */
 .btn.rounded {
-  border-radius: 30px;
+  border-radius: 50px;
+  background-color: #03e9f4;
+  color: white;
+}
+
+.btn.rounded:hover {
+  box-shadow: 0 0 15px #03e9f4;
 }
 
 /* Block Button */
 .btn.block {
   width: 100%;
-  display: block;
+  text-align: center;
+  background-color: #03e9f4;
+  color: white;
 }
 
-/* Icon Left Button */
-.btn.icon-left .icon {
-  margin: 0 10px;
-}
-
-.btn.icon-left {
-  flex-direction: row-reverse;
-}
-
-/* Icon Right Button */
-.btn.icon-right .icon {
-  margin: 0 10px;
-}
-
-.btn.icon-right {
-  flex-direction: row;
+.btn.block:hover {
+  box-shadow: 0 0 15px #03e9f4;
 }
 
 /* Icon Only Button */
 .btn.icon-only {
-  padding: 10px;
-  background-color: #3498db;
-  color: white;
+  width: 50px;
+  height: 50px;
+  padding: 0;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  background-color: #ff0080;
+  color: white;
   justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
 .btn.icon-only:hover {
-  background-color: #2980b9;
+  box-shadow: 0 0 20px #ff0080;
 }
 
 /* Icon + Text Button */
-.btn.icon-text .icon {
-  margin: 0 10px;
+.btn.icon-text {
+  background-color: #03e9f4;
+  color: white;
 }
 
-/* Container Styles for Layout */
+.btn.icon-text .icon {
+  margin-right: 10px;
+}
+
+.btn.icon-text:hover {
+  box-shadow: 0 0 15px #03e9f4, 0 0 20px #ff0080;
+}
+
+/* Layout for Buttons */
 .button-container {
   display: flex;
   flex-wrap: wrap;
