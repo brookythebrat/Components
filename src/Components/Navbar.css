@@ -4,10 +4,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px 30px;
-  background-color: #000107;
+  background-color:#292634;
   color: white;
   transition: all 0.3s ease;
   height: 60px; /* Explicit height */
+  border: 2px solid orange ;
+  border-radius: 20px;
 }
 
 .navbar .logo img {
@@ -62,6 +64,7 @@
   margin-top: 20px;
   position: relative;
   height: 60px; /* Set height to match first navbar */
+  border: 2px solid #39ff14;
 }
 
 .glow-navbar .logo {
