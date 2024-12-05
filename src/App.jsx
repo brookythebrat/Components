@@ -39,6 +39,9 @@ import Accordion2 from './UtilityComponents/Accordion2';
 import DropdownMenu from './UtilityComponents/DropdownMenu';
 import SearchBar from './UtilityComponents/SearchBar';
 import AnimatedButton from './AnimatedComponents/AnimatedButton';
+import AnimatedCard from './AnimatedComponents/AnimatedCardComponent';
+import "@fontsource/roboto";
+
 
 
 
@@ -82,9 +85,12 @@ function App() {
 const steps = ["Step One", "Step Two", "Step Three", "Step Four"];
 
 
+
+
   return (
     <>
       <div>
+        <h1> Glow Components </h1>
         <h1> Basic Components </h1>
         <h2>Different Types Of Navbars</h2>
         <Navbar />
@@ -154,6 +160,7 @@ const steps = ["Step One", "Step Two", "Step Three", "Step Four"];
         <h1>Animated Components</h1>
         <AnimatedButton>Click Me</AnimatedButton>
         <AnimatedButton>Learn More</AnimatedButton>
+        <AnimatedCard />
       </div>
     </>
   );
